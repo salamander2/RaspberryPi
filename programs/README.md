@@ -7,6 +7,14 @@ If they get to be big and complicated, I'll make a separate subfolder for them. 
 
 ----
 
+### 1. Colour.py
+
+**Photos**
+![Circuit](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/TriColour_a.jpg)
+![Part of circuit that is used for this project](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/TriColour_b.jpg)
+![Screen shot of program running](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/TriColour_c.jpg)
+![another screen shot](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/TriColour_d.jpg)
+
 The **Colour.py** program is used to control the colour of the tri-colour LED.
   * The shorter three legs connect to resistors which then connect to GPIO pins. You can see in the code where I set the pin numbers.
   * The long leg connects to ground. You can use a jumper wire to connect it. 
