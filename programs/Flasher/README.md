@@ -36,13 +36,8 @@ This is a Raspberry Pi program to flash LEDs in different patterns and also shut
   
 ------
 
-### 4. Some references for GPIO pins
 
-* GPIO P1 Header Pinouts: http://elinux.org/Rpi_Low-level_peripherals#P1_header
-
-* More details for pinouts: http://elinux.org/RPi_BCM2835_GPIOs
-
-#### 5. I changed rc.local so that my program starts when the RPi boots up.
+#### 4. I changed rc.local so that my program starts when the RPi boots up.
 
 ```
 ~/myPython> $ cat /etc/rc.local
