@@ -3,7 +3,8 @@ Various Raspberry Pi programs
 
 I'm putting my various programs that I write here. I'll try and add photos too.
 
-If they get to be big and complicated, I'll make a separate subfolder for them.  The FLASHER program is the first one that is in a separate folder.
+If they get to be big and complicated I'll make a separate subfolder for them.  
+ The FLASHER program is the first one that is in a separate folder.
 
 ----
 
