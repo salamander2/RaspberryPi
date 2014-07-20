@@ -12,11 +12,9 @@ This is a Raspberry Pi program to flash LEDs in different patterns and also shut
 ### 2. Here are photos of the way I set up the GPIO breakout and the breadboard.
 
 
-![Photo 1](https://raw.githubusercontent.com/salamander2/Flasher/master/flasher1.jpg)
-
-![Photo 2](https://raw.githubusercontent.com/salamander2/Flasher/master/flasher2.jpg)
-
-![Photo 3](https://raw.githubusercontent.com/salamander2/Flasher/master/flasher3.jpg)
+![Photo 1](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/Flasher/flasher1.jpg)
+![Photo 2](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/Flasher/flasher2.jpg)
+![Photo 3](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/Flasher/flasher3.jpg)
 
 ### 3.  Other programs
 
