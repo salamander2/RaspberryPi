@@ -2,7 +2,7 @@ Raspberry Pi programs and setup
 ===============================
 
 ### 1 How to set up your Raspberry Pi
-[from James Doyle's Raspberry Pi course](https://github.com/james2doyle/raspberry-pi-course)
+[(from James Doyle's Raspberry Pi course)](https://github.com/james2doyle/raspberry-pi-course)
 
 
 #### Install Rasbian
