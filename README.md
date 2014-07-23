@@ -77,11 +77,13 @@ iface wlan0 inet static
 #### Installing the required tools
 
 HOW TO USE GIT ...
+[How to use GitHub](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md) (this is
 
 * Install `git`
   * run `sudo apt-get install git`
   * accept the dependencies with `y`
   * check that git is installed with `which git`, a path should be returned
+  * clone ...
 
 
 ## 2 Programs
