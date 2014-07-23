@@ -80,6 +80,9 @@ git remote set-url origin git@github.com:salamander2/RaspberryPi
 git remote -v     #just testing
 ```
 
+#### *I'm not an expert on Git, so I basically just use the following commands in this order*
+Note: if you want to make a subfolder, you have to also put at least on file in it.
+
 #### Add 
 `git add *`
 
