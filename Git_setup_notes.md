@@ -91,7 +91,7 @@ This command will add any files in the directory to the list to be mirrored with
 #### Pull
 `git pull origin master`
 
-This command will get the lastest versions of all of the files on the github repository. Normally this is the first thing you do.
+This command will get the lastest versions of all of the files on the github repository. Normally this is the first thing you do.  If you have modified files on your Raspberry Pi more recently than the ones on GitHub, it will not overwrite them. 
 
 #### Status
 `git status -s`
