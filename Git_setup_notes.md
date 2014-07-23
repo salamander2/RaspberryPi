@@ -72,13 +72,16 @@ Now we'll set up this directory to be a mirror of the RaspberryPi repository on 
 `git remote set-url origin git@github.com:salamander2/RaspberryPi`
 `git remote -v`     #just testing
 
-*This command will add any files in the directory to the list to be mirrored with the repository*
-`git add *`
-*Any time you create a new file locally, you have to add it.*
+* This command will add any files in the directory to the list to be mirrored with the repository. Any time you create a new file locally, you have to add it.
 
-*This command will get the lastest versions of all of the files on the github repository.* Normally this is the first thing you do.
+`git add *`
+
+
+* This command will get the lastest versions of all of the files on the github repository. Normally this is the first thing you do.
+
 `git pull origin master`
 
 *This command is used to check the status of the added files.*
+
 `git status -s`
 
