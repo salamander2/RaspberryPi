@@ -1,11 +1,11 @@
 ### GUI desktop commands
-If you have no mouse plugged in, use these:
+Once you have run `startx` to start the desktop windows, if you have no mouse plugged in, use these:
 * ALT-F2 will pop up a box where you can type in the program you want to run
 * CTRL-ESC will bring up the main menu
 * SHIFT-F10 is the same as right-clicking the mouse buttons
 * ALT-F1 does something
 
-#### Useful Linux Commands
+#### Useful Linux Commands (for the command line):
 
 Most of these commands have options and/or take parameters. e.g. `ls -la *py`
 * sudo : this is "superuser do". Linux prevents you from really screwing up the operating system by not letting you mess with important files. If you really really want to do this, you have to be a superuser (and "pi" is), and then prefix your command with the word `sudo`.
@@ -22,7 +22,7 @@ Most of these commands have options and/or take parameters. e.g. `ls -la *py`
 * df : how much disk free space you have. `df -h` is better
 
 
-### Command line: 
+### Using Command line: 
 * use the up and down arrow keys to see previous commands
 * to search for a command, type CTRL-R and then any text in the command. You can either keep typing in more text, or use CTRL-R again to go through all of the possibilities.  e.g. look for a previous command that has "re" in it.
 * command completion/searching. You can find commands that are on the path, by typing the first part of the command and then hitting TAB twice. e.g. List all the commands that start with "smb", type `smb<tab><tab>`
