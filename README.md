@@ -15,6 +15,13 @@ Raspberry Pi programs and setup
 * login with the default credentials
 * you are now logged into the shell. Use `startx` to launch the desktop
 
+### GUI desktop commands
+If youhave no mouse plugged in, use these:
+* ALT-F2 will pop up a box where you can type in the program you want to run
+* CTRL-ESC will bring up the main menu
+* SHIFT-F10 is the same as the mouse right-click button
+* ALT-F1 does something
+
 #### Keyboard Problems
 
 If you press the `~` key and see that it is not `~` that means your keyboard is not setup properly.
@@ -36,12 +43,16 @@ Most of these commands have options and/or take parameters. e.g. `ls -la *py`
 * ls : list files. There are many options to the `ls` command.  `ls -l`  and `ls -a` are two I use a lot
 * cat : this displays a file (prints it to the screen)  e.g. `cat /etc/rc.local`
 * pwd : display present working directory
-* cd : change directory
+* cd : change directory.  
+    * You can also always get to the home directory by typing `cd`
+    * `cd -` will take you to the previous directory you were in
+    * You can get to a complicated location (eg. ./quick2wire_some_stuff) by typing just the first few letters and then pressing tab. `cd qui<TAB>`
 * man : look un the manual (man page) for something. e.g. `man python`
 * apt-get : this is the main (best??) way to install new software. e.g. `sudo apt-get install git`   Other useful options are `sudo apt-get autoremove` . It also updates your software and patches it.
-* 
+* df : how much disk free space you have. `df -h` is better
 
-Command line: 
+
+### Command line: 
 * use the up and down arrow keys to see previous commands
 * to search for a command, type CTRL-R and then any text in the command. You can either keep typing in more text, or use CTRL-R again to go through all of the possibilities.  e.g. look for a previous command that has "re" in it.
 * command completion/searching. You can find commands that are on the path, by typing the first part of the command and then hitting TAB twice. e.g. List all the commands that start with "smb", type `smb<tab><tab>`
@@ -74,6 +85,7 @@ iface wlan0 inet dhcp
 * Update the list of packages (repositories) with `sudo apt-get update`
 * Upgrade the RPi with `sudo apt-get upgrade`
 * You can combine this into one command: `sudo apt-get update && sudo apt-get upgrade`
+* You must be connected to the internet for this to work
 * You should do this every month or so to apply the most recent patches to the operating system.
 
 #### Installing the required tools
