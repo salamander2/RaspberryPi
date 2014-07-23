@@ -3,17 +3,22 @@ My Notes on how to set up Git to connect with Git Hub
 
 I'm doing this on a Raspberry Pi
 
-1. You need to have a GitHub account set up.  This implies that you need an email address too.
+####1. Set up GitHub account
+You need to have a GitHub account set up.  This implies that you need an email address too.
 Make a repository on GitHub.  e.g. I made one called RaspberryPi
 
-2. If git is not installed, install it. `sudo apt-get install git`
+####2. If git is not installed, install it. 
+ 
+`sudo apt-get install git`
 
-3. Set up the main parts of Git
+####3. Set up the main parts of Git
+```
+git config --global user.name "salamander2"
+git config --global user.email "salamander2@email.com"
+```
 
-`git config --global user.name "salamander2"`
-`git config --global user.email "salamander2@email.com"`
+####4. Make a public/private key
 
-4. Make a public/private key
 ```
     ssh-keygen -t rsa -C "salamander2@email.com"
 
@@ -34,14 +39,15 @@ Make a repository on GitHub.  e.g. I made one called RaspberryPi
     +-----------------+
 ```
 
-5. Copy this public key to github
+#####5. Copy this public key to github
+
 * In your github.com account, go to account settings
 * click on SSH keys
 * click on add SSH key
 * on your raspberry pi, `cat ~/.ssh/id_rsa.pub`
 * copy the output of this command (the contents of the id_rsa.pub file) and paste it into the appropriate place in the GitHub screen.
 
-6. Now test the connection to GitHub to make sure that it works.
+####6. Now test the connection to GitHub to make sure that it works.
 
 On your Raspberry Pi, type the following
 ```
@@ -61,7 +67,7 @@ Hi salamander2! You've successfully authenticated, but GitHub does not provide s
 
 ```
 
-7. Using git
+###7. Using git
 
 **Important** change to the directory that will be a mirror of your GitHub repository
 (i.e. `mkdir myPython`  then `cd myPython`)
