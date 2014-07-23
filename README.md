@@ -15,9 +15,6 @@ Raspberry Pi programs and setup
 * login with the default credentials
 * you are now logged into the shell. Use `startx` to launch the desktop
 
-### [Useful Linux Commands](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md)
-
-Read these at some point.
 
 #### Keyboard Problems
 
@@ -63,6 +60,8 @@ iface wlan0 inet dhcp
 * You must be connected to the internet for this to work
 * You should do this every month or so to apply the most recent patches to the operating system.
 
+### [Useful Linux Commands](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md)  (read these at some point)
+
 #### Installing the required tools
 
 HOW TO USE GIT ...
@@ -73,10 +72,10 @@ HOW TO USE GIT ...
   * check that git is installed with `which git`, a path should be returned
 
 
-### 2 Programs
+## 2 Programs
 NOTE: The main program right now is "Flasher" -- have a look under programs/Flasher
 
-### 3 Some references for GPIO pins
+## 3 Some references for GPIO pins
  
  * GPIO P1 Header Pinouts: http://elinux.org/Rpi_Low-level_peripherals#P1_header
  
