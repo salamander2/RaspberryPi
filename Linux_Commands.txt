@@ -1,3 +1,10 @@
+### GUI desktop commands
+If you have no mouse plugged in, use these:
+* ALT-F2 will pop up a box where you can type in the program you want to run
+* CTRL-ESC will bring up the main menu
+* SHIFT-F10 is the same as right-clicking the mouse buttons
+* ALT-F1 does something
+
 #### Useful Linux Commands
 
 Most of these commands have options and/or take parameters. e.g. `ls -la *py`
