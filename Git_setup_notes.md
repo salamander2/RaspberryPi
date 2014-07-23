@@ -67,7 +67,7 @@ Hi salamander2! You've successfully authenticated, but GitHub does not provide s
 
 ```
 
-###7. Using git
+##Using Git
 
 **Important** change to the directory that will be a mirror of your GitHub repository
 (i.e. `mkdir myPython`  then `cd myPython`)
@@ -78,16 +78,28 @@ Now we'll set up this directory to be a mirror of the RaspberryPi repository on 
 `git remote set-url origin git@github.com:salamander2/RaspberryPi`
 `git remote -v`     #just testing
 
-* This command will add any files in the directory to the list to be mirrored with the repository. Any time you create a new file locally, you have to add it.
+#### Add 
+This command will add any files in the directory to the list to be mirrored with the repository. Any time you create a new file locally, you have to add it.
 
 `git add *`
 
-
-* This command will get the lastest versions of all of the files on the github repository. Normally this is the first thing you do.
+#### Pull
+This command will get the lastest versions of all of the files on the github repository. Normally this is the first thing you do.
 
 `git pull origin master`
 
-*This command is used to check the status of the added files.*
+#### Status
+This command is used to check the status of the added files.
 
 `git status -s`
+
+#### Commit
+This commits your changes (whatever that means!). You have to add a message to say what your changes are.
+`git commit`  or `git commit -m 'updated comments'`
+
+#### Synchronize:
+Send your changed files to the GitHub repository
+`git push origin master`
+
+
 
