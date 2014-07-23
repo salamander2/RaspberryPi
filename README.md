@@ -58,6 +58,8 @@ iface wlan0 inet dhcp
 
 #### Installing the required tools
 
+HOW TO USE GIT ...
+
 * Install `git`
   * run `sudo apt-get install git`
   * accept the dependencies with `y`
