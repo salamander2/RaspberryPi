@@ -72,7 +72,7 @@ iface wlan0 inet static
 * You must be connected to the internet for this to work
 * You should do this every month or so to apply the most recent patches to the operating system.
 
-### [Useful Linux Commands](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md)  (read these at some point)
+### > [Useful Linux Commands](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md) < (read these at some point)
 
 #### Installing the required tools
 
