@@ -16,10 +16,10 @@ Raspberry Pi programs and setup
 * you are now logged into the shell. Use `startx` to launch the desktop
 
 ### GUI desktop commands
-If youhave no mouse plugged in, use these:
+If you have no mouse plugged in, use these:
 * ALT-F2 will pop up a box where you can type in the program you want to run
 * CTRL-ESC will bring up the main menu
-* SHIFT-F10 is the same as the mouse right-click button
+* SHIFT-F10 is the same as right-clicking the mouse buttons
 * ALT-F1 does something
 
 #### Keyboard Problems
