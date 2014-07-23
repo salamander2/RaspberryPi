@@ -4,6 +4,7 @@ My Notes on how to set up Git to connect with Git Hub
 I'm doing this on a Raspberry Pi
 
 1. You need to have a GitHub account set up.  This implies that you need an email address too.
+Make a repository on GitHub.  e.g. I made one called RaspberryPi
 
 2. If git is not installed, install it. `sudo apt-get install git`
 
@@ -44,10 +45,10 @@ I'm doing this on a Raspberry Pi
 
 On your Raspberry Pi, type the following
 ```
-    eval `ssh-agent -s`
-    ssh-add ~/.ssh/id_rsa
-                  #You'll have to type in your passphrase here when asked
-    ssh -T git@github.com
+eval `ssh-agent -s`
+ssh-add ~/.ssh/id_rsa
+              #You'll have to type in your passphrase here when asked
+ssh -T git@github.com
 ```
 
 You may see something like this:
@@ -59,3 +60,25 @@ Warning: Permanently added 'github.com,192.30.252.131' (RSA) to the list of know
 Hi salamander2! You've successfully authenticated, but GitHub does not provide shell access.
 
 ```
+
+7. Using git
+
+**Important** change to the directory that will be a mirror of your GitHub repository
+(i.e. `mkdir myPython`  then `cd myPython`)
+Now we'll set up this directory to be a mirror of the RaspberryPi repository on GitHub
+
+`git init`
+`git remote add origin ssh://git@github.com/salamander2/RaspberryPi`
+`git remote set-url origin git@github.com:salamander2/RaspberryPi`
+`git remote -v`     #just testing
+
+*This command will add any files in the directory to the list to be mirrored with the repository*
+`git add *`
+*Any time you create a new file locally, you have to add it.*
+
+*This command will get the lastest versions of all of the files on the github repository.* Normally this is the first thing you do.
+`git pull origin master`
+
+*This command is used to check the status of the added files.*
+`git status -s`
+
