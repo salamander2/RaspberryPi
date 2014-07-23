@@ -33,7 +33,8 @@ If you press the `~` key and see that it is not `~` that means your keyboard is 
 #### Setup WiFi
 
 * Run `sudo nano /etc/network/interfaces` to open the network config
-* Ignore the stuff about the `eth0` device. Change the stuff about `wlan0` to the following, delete things if necessary.
+* Ignore the stuff about the `eth0` device. It is used to configure the ethernet (cable) adapter.
+* Change the stuff about `wlan0` to the following, delete things if necessary.
 
 ```
 auto lo
@@ -45,12 +46,23 @@ allow-hotplug wlan0
 auto wlan0
 
 iface wlan0 inet dhcp
-        wpa-ssid "networkname"
-        wpa-psk "password"
+    wpa-ssid "networkname"
+    wpa-psk "password"
 ```
 
 * save the file with `ctrl+o`, confirm the filename with `y`, and press `ctrl+x` to close nano.
 * restart the RPi with `sudo shutdown -r now`
+
+* If you want a static IP address (for your home network), type in something like the following. You'll have to make changves appropriate for your home network.
+```
+iface wlan0 inet static
+    address 192.168.1.33
+    netmask 255.255.255.0
+    network 192.168.1.0
+    broadcast 192.168.1.255
+    gateway 192.168.1.1
+    dns-nameservers 8.8.8.8  #Google DNS
+```
 
 #### Update Linux
 
