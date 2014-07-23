@@ -69,37 +69,43 @@ Hi salamander2! You've successfully authenticated, but GitHub does not provide s
 
 ##Using Git
 
-**Important** change to the directory that will be a mirror of your GitHub repository
+**Important:** change to the directory that will be a mirror of your GitHub repository
 (i.e. `mkdir myPython`  then `cd myPython`)
 Now we'll set up this directory to be a mirror of the RaspberryPi repository on GitHub
+```
+git init
+git remote add origin ssh://git@github.com/salamander2/RaspberryPi
+git remote set-url origin git@github.com:salamander2/RaspberryPi
 
-`git init`
-`git remote add origin ssh://git@github.com/salamander2/RaspberryPi`
-`git remote set-url origin git@github.com:salamander2/RaspberryPi`
-`git remote -v`     #just testing
+git remote -v     #just testing
+```
 
 #### Add 
-This command will add any files in the directory to the list to be mirrored with the repository. Any time you create a new file locally, you have to add it.
-
 `git add *`
 
-#### Pull
-This command will get the lastest versions of all of the files on the github repository. Normally this is the first thing you do.
+This command will add any files in the directory to the list to be mirrored with the repository. Any time you create a new file locally, you have to add it.
 
+#### Pull
 `git pull origin master`
 
-#### Status
-This command is used to check the status of the added files.
+This command will get the lastest versions of all of the files on the github repository. Normally this is the first thing you do.
 
+#### Status
 `git status -s`
 
+This command is used to check the status of the added files.
+
+
 #### Commit
-This commits your changes (whatever that means!). You have to add a message to say what your changes are.
 `git commit`  or `git commit -m 'updated comments'`
 
+This commits your changes (whatever that means!). You have to add a message to say what your changes are.
+
 #### Synchronize:
-Send your changed files to the GitHub repository
 `git push origin master`
+
+Send your changed files to the GitHub repository. Note, it seems that `git pull origin master` also sometimes sends your updated files to GitHub
+
 
 
 
