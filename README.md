@@ -7,7 +7,7 @@ Raspberry Pi programs and setup
 
 #### Install Rasbian
 
-* download [NOOBs offline](http://www.raspberrypi.org/downloads/) and unzip it onto the SD Card you want to use
+* You should have a preinstalled SD card. If you don't then download [NOOBs offline](http://www.raspberrypi.org/downloads/) and unzip it onto the SD Card you want to use
 * Choose the Rasbian option by hitting the `spacebar` and then press `i` to start the installation
 * make sure your keyboard is **US and not GB**
 * the default username and password is  "pi" and "raspberry", respectively
