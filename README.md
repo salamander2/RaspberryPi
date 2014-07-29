@@ -24,6 +24,7 @@ If you press the `~` key and see that it is not `~` that means your keyboard is 
 * run `sudo raspi-config` from the command line
 * if you don't have a mouse plugged in, use the <TAB> key and arrow keys to navigate.
 * highlight `4 Internationalisation Options` and press enter
+* **You can also set your timezone here.**
 * you should see an option for keyboard layout, select that
 * you should change to a `Generic Key` keyboard when in doubt
 * the next pages will let you set a locale for the keyboard, we want US not UK
