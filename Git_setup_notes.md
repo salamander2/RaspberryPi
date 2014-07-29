@@ -19,8 +19,12 @@ You need to have a GitHub account set up.  This implies that you need an email a
 Make a repository on GitHub.  e.g. I made one called RaspberryPi
 
 ####2. If git is not installed, install it. 
- 
-`sudo apt-get install git`
+
+Git is already installed with Raspbian. If it wasn't installed and you needed to install it, you would do the following:
+  * run `sudo apt-get install git`
+  * accept the dependencies with `y`
+  * check that git is installed with `which git`, a path should be returned
+
 
 ####3. Set up the main parts of Git
 ```
