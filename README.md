@@ -27,9 +27,9 @@ If you press the `~` key and see that it is not `~` that means your keyboard is 
 * **You can also set your timezone here.**
 * you should see an option for keyboard layout, select that
 * you should change to a `Generic Key` keyboard when in doubt
-* the next pages will let you set a locale for the keyboard, we want US not UK
+* the next pages will let you set a locale for the keyboard, we want US not UK  (or en_US.UTF-8)
 * Choose other in the language choice
-* Choose US for the next choice
+* Choose US for the next choice (or en_US.UTF-8)
 * you can leave everything else default and just press enter throughout
 * you make need to click no <Finish> to exit.
 
@@ -90,11 +90,11 @@ iface wlan0 inet static
 HOW TO USE GIT ...
 [How to use GitHub](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md) (this is
 
-* Install `git`
+* Git is already installed with Raspbian. If it wasn't installed and you needed to install it, you would do the following:
   * run `sudo apt-get install git`
   * accept the dependencies with `y`
   * check that git is installed with `which git`, a path should be returned
-  * clone ...
+
 
 
 ## 2 Programs
