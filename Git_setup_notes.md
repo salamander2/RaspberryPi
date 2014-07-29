@@ -3,6 +3,17 @@ My Notes on how to set up Git to connect with Git Hub
 
 I'm doing this on a Raspberry Pi
 
+How to get one file and save it in the current directory :
+`wget https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/Flasher/Flasher.py`
+
+Clone my RaspberryPi project. This will make a copy of the whole git repository and store it in a folder called RaspberryPi. It copies the programs, readme files, images, etc. 
+* `cd`  go to home directory
+* `git clone https://github.com/salamander2/RaspberryPi`  
+
+-----
+
+### How to actually use Git to track and store programs
+
 ####1. Set up GitHub account
 You need to have a GitHub account set up.  This implies that you need an email address too.
 Make a repository on GitHub.  e.g. I made one called RaspberryPi
@@ -81,6 +92,7 @@ git remote -v     #just testing
 ```
 
 #### *I'm not an expert on Git, so I basically just use the following commands in this order*
+There are many good references on the internet. e.g. http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository
 Note: if you want to make a subfolder, you have to also put at least on file in it.
 
 #### Add 
