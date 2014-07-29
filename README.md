@@ -88,14 +88,10 @@ iface wlan0 inet static
 #### Installing the required tools
 
 HOW TO USE GIT ...
-[How to use GitHub](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md) (this is
+[How to use GitHub](https://github.com/salamander2/RaspberryPi/blob/master/Git_setup_notes.md) 
 
-* Git is already installed with Raspbian. If it wasn't installed and you needed to install it, you would do the following:
-  * run `sudo apt-get install git`
-  * accept the dependencies with `y`
-  * check that git is installed with `which git`, a path should be returned
-
-
+This is my attempt to understand and explain it. You only need to run one command to download my programs:
+`git clone https://github.com/salamander2/RaspberryPi`
 
 ## 2 Programs
 NOTE: The main program right now is "Flasher" -- have a look under programs/Flasher
