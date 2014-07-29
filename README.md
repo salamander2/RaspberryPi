@@ -54,7 +54,7 @@ iface wlan0 inet dhcp
 ```
 
 * save the file with `ctrl+o`, press <Enter> to confirm the filename, and press `ctrl+x` to close nano.
-* restart the RPi with `sudo shutdown -r now`
+* restart the RPi with `sudo shutdown -r now` or <CTRL><ALT><DEL>
 
 * If you want a static IP address (for your home network), change the wlan0 settings to something like the following. You'll have to make changes appropriate for your home network.
 ```
@@ -79,8 +79,10 @@ iface wlan0 inet static
 * You must be connected to the internet for this to work
 * You should do this every month or so to apply the most recent patches to the operating system.
 
-### > [Useful Linux Commands](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md) for GUI and command line
+###  [Useful Linux Commands](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md) for GUI and command line
 #### (Read these at some point)
+
+-----
 
 #### Installing the required tools
 
