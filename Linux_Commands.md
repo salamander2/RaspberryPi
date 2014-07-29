@@ -21,6 +21,7 @@ Most of these commands have options and/or take parameters. e.g. `ls -la *py`
 * **man** : look un the manual (man page) for something. e.g. `man python`
 * **apt-get** : this is the main (best??) way to install new software. e.g. `sudo apt-get install git`   Other useful options are `sudo apt-get autoremove` . It also updates your software and patches it.
 * **df** : how much disk free space you have. `df -h` is better
+* **passwd** : this is the command to change your password
 * **ifconfig** : information about all network devices
 * **iwconfig** : information about all WiFi network devices
 
