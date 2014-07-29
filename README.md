@@ -67,6 +67,10 @@ iface wlan0 inet static
     dns-nameservers 8.8.8.8  #Google DNS
 ```
 
+* Be careful not to make typos or you won't be able to connect to the internet. Type `cat /etc/network/interfaces` to display the file.
+* To confirm that you're connected to the internet, type `date`. Raspberry Pi will automatically set the date and time to the correct value from the internet. 
+* To find your IP address, type `ifconfig`
+
 #### Update Linux
 
 * Update the list of packages (repositories) with `sudo apt-get update`
