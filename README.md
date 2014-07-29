@@ -22,6 +22,7 @@ Raspberry Pi programs and setup
 If you press the `~` key and see that it is not `~` that means your keyboard is not setup properly.
 
 * run `sudo raspi-config` from the command line
+* if you don't have a mouse plugged in, use the <TAB> key and arrow keys to navigate.
 * highlight `4 Internationalisation Options` and press enter
 * you should see an option for keyboard layout, select that
 * you should change to a `Generic Key` keyboard when in doubt
@@ -29,6 +30,7 @@ If you press the `~` key and see that it is not `~` that means your keyboard is 
 * Choose other in the language choice
 * Choose US for the next choice
 * you can leave everything else default and just press enter throughout
+* you make need to click no <Finish> to exit.
 
 
 #### Setup WiFi
@@ -51,10 +53,10 @@ iface wlan0 inet dhcp
     wpa-psk "password"
 ```
 
-* save the file with `ctrl+o`, confirm the filename with `y`, and press `ctrl+x` to close nano.
+* save the file with `ctrl+o`, press <Enter> to confirm the filename, and press `ctrl+x` to close nano.
 * restart the RPi with `sudo shutdown -r now`
 
-* If you want a static IP address (for your home network), type in something like the following. You'll have to make changves appropriate for your home network.
+* If you want a static IP address (for your home network), change the wlan0 settings to something like the following. You'll have to make changes appropriate for your home network.
 ```
 iface wlan0 inet static
     address 192.168.1.33
