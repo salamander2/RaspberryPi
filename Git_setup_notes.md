@@ -1,4 +1,4 @@
-My Notes on how to set up Git to connect with Git Hub
+My notes on how to set up Git to connect with Git Hub
 ============
 
 (I'm doing this on a Raspberry Pi)
