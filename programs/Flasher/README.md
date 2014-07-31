@@ -4,7 +4,7 @@ Flasher
 This is a Raspberry Pi program to flash LEDs in different patterns and also shutdown the Raspberry Pi (based on switch presses)
 
 ### 1. Here is a video of the flasher program running 
-![Video](https://i1.ytimg.com/vi/eaOr0dMoI64/mqdefault.jpg) [http://youtu.be/eaOr0dMoI64]   Have a look at it! 
+![Video](https://i1.ytimg.com/vi/eaOr0dMoI64/mqdefault.jpg) **[http://youtu.be/eaOr0dMoI64]   Have a look at it!**
 
 *(Click the URL link not the image)*
 
