@@ -90,13 +90,14 @@ iface wlan0 inet static
 HOW TO USE GIT ...
 [How to use GitHub](https://github.com/salamander2/RaspberryPi/blob/master/Git_setup_notes.md) 
 
-This is my attempt to understand and explain it. You only need to run one command to download my programs:
+(This is my attempt to understand and explain it.)  You only need to run one command to download my programs:
 `git clone https://github.com/salamander2/RaspberryPi`
 
 ## 2 Programs
-NOTE: The main program right now is "Flasher" -- have a look under programs/Flasher
 
-## 3 Some references for GPIO pins
+I have put all of my Raspberry Pi programs with photos, schematics, videos, explanations, and source code in separate folders under RaspberryPi/programs
+
+## 3 Useful references for GPIO pins
  
  * GPIO P1 Header Pinouts: http://elinux.org/Rpi_Low-level_peripherals#P1_header
  
