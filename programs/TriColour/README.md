@@ -1,7 +1,7 @@
 Three Colour LED program
 ========================
 
-### Program name: Tricolour.py
+### Program name: TriColour.py
 
 **Photos**
 ![Circuit](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/TriColour/TriColour_a.jpg)
@@ -17,7 +17,7 @@ Screen shot of program running
 ![another screen shot](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/TriColour/TriColour_d.jpg)
 Another screen shot of the program running.
 
-The **Colour.py** program is used to control the colour of the tri-colour LED.
+The **TriColour.py** program is used to control the colour of the tri-colour LED.
   * The shorter three legs connect to resistors which then connect to GPIO pins. You can see in the code where I set the pin numbers.
   * The long leg connects to ground. You can use a jumper wire to connect it. 
   * If you want a complete circuit diagram let me know.
@@ -28,3 +28,4 @@ The **Colour.py** program is used to control the colour of the tri-colour LED.
   * Note: for the keypresses to work, you'll have to connect via SSH (or HDMI and USB keyboard).
 
 ----
+![Schematic diagram](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/TriColour/RGB_Colour_bb.png) This is a schematic diagram made by Fritzing. (www.fritzing.org)
