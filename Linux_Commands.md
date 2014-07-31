@@ -6,6 +6,7 @@ Once you have run `startx` to start the desktop windows, if you have no mouse pl
 * To exit the GUI and go back to the command prompt, logout using the option at the bottom of the start menu.
 
 #### Useful Linux Commands (for the command line):
+All linux commands are lower case (as far as I know). File names (and everything else) is case sensitive.
 
 Most of these commands have options and/or take parameters. e.g. `ls -la *py`
 * **sudo** : this is "superuser do". Linux prevents you from really screwing up the operating system by not letting you mess with important files. If you really really want to do this, you have to be a superuser (and "pi" is), and then prefix your command with the word `sudo`.
