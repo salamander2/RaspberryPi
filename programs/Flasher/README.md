@@ -16,17 +16,23 @@ This is a Raspberry Pi program to flash LEDs in different patterns and also shut
 ![Photo 2](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/Flasher/flasher2.jpg)
 ![Photo 3](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/Flasher/flasher3.jpg)
 
-### 3.  Other programs
+### 3. And here is the schematic:
+![fritzing](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/Flasher/Flasher_bb.png)
+
+### 4.  Pulse program
 
 * I've added a program called **"Pulse.py"** .  
   * This will make one red and one blue LED pulse. 
   * It's using PWM (pulse width modulation) to control the brightness of the LEDs.  
   * It uses the same setup (hardware layout) as the Flasher project
+  * Just pick any two LEDs you want to pulse .
+ 
+I got the code from [here](http://raspi.tv/2013/how-to-use-soft-pwm-in-rpi-gpio-pt-2-led-dimming-and-motor-speed-control). There's a video near the bottom of the page.
 
 ------
 
 
-#### 4. I changed rc.local so that my program starts when the RPi boots up.
+#### 5. I changed rc.local so that my program starts when the RPi boots up.
 
 ```
 ~/myPython> $ cat /etc/rc.local
