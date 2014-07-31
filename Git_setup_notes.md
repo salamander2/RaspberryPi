@@ -125,6 +125,12 @@ This commits your changes (whatever that means!). You have to add a message to s
 
 Send your changed files to the GitHub repository. Note, it seems that `git pull origin master` also sometimes sends your updated files to GitHub
 
+#### Deleting files
+`git add -A *`
 
+This will automatically track files that have been deleted (locally) and delete them on GitHub (after a commit and push).  Another possible method is `git rm $(git ls-files --deleted) `
+
+#### Recovering past versions
+When I accidentally delete something or need to go back to a previous version, I'll figure this part out.
 
 
