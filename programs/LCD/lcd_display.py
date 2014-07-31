@@ -86,6 +86,9 @@ Class to control the 16x2 I2C LCD display from sainsmart from the Raspberry Pi
     self.write_four_bits(mode | (cmd & 0xF0))
     self.write_four_bits(mode | ((cmd << 4) & 0xF0))
 
+###### The functions above this line are all internal functions (which would be "private" in Java). Don't use them.
+###### The functions below are all able to be called by other programs to manipulate the LCD display.
+
   def display_string(self, string, line):
     """display a string on the given line of the display, 1 or 2, string is truncated to 16 chars and centred"""
     centered_string = string.center(16)
