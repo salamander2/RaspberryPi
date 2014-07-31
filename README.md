@@ -103,3 +103,6 @@ I have put all of my Raspberry Pi programs with photos, schematics, videos, expl
  
  * More details for pinouts: http://elinux.org/RPi_BCM2835_GPIOs
 
+![GPIO pins](http://elinux.org/images/2/2a/GPIOs.png)
+ 
+
