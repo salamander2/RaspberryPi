@@ -6,7 +6,7 @@ Three Colour LED program
 **Photos**
 ![Circuit](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/TriColour/TriColour_a.jpg)
 
-**Click here for my [YouTube Video](https://www.youtube.com/watch?v=ojwL1GuAkUk) of it in action.**
+**>> Click here for my [YouTube Video](https://www.youtube.com/watch?v=ojwL1GuAkUk) of it in action. <<**
 
 ![Part of circuit that is used for this project](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/TriColour/TriColour_b.jpg)
 I've left the circut for the Flasher program on the breadboard and just used another corner of it for the 3 colour LED.
