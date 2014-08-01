@@ -82,17 +82,13 @@ iface wlan0 inet static
 
 -----------
 
-###  [Useful Linux Commands](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md) for GUI and command line
-#### (Read these at some point)
+###  Here are [Useful Linux Commands](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md) for GUI and command line (read these at some point).
 
------
 
 #### Various Tools
 
 #### GitHub and Git
-[How to use GitHub](https://github.com/salamander2/RaspberryPi/blob/master/Git_setup_notes.md) 
-
-(This is my attempt to understand and explain it.)  You only need to run one command to download my programs:
+[How to use GitHub](https://github.com/salamander2/RaspberryPi/blob/master/Git_setup_notes.md)  This is my attempt to understand and explain it.  You only need to run one command to download my programs:
 `git clone https://github.com/salamander2/RaspberryPi`
 
 #### Connecting and File Transfer
@@ -108,7 +104,7 @@ Other ways of moving files:
 * plug your Raspbian SD card into your computer. Unfortunately, Windows doesn't know how to read the Ext4 file system - so you need to install software (ext2read) that will let Windows do this.
 * rsync (a linux program that is similar to ssh/scp)
 
-**Music** 
+#### Music
 
 **omxplayer** : this runs the default music player. If you're interested in music on your RPi, have a look at http://www.raspberrypi.org/tag/music/ and http://www.raspyfi.com/
 
