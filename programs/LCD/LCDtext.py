@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 #from lcd_display import lcd
 import lcd_display
 import RPi.GPIO as GPIO
