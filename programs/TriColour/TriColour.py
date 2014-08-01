@@ -85,12 +85,12 @@ def main2():
     red.start(rr)
     print "Press r g b to increase brightness"
     print "Press R G B to decrease brightness"
-    print "Press c to quit the program (cancel)\n"
+    print "Press q or c to quit the program (cancel)\n"
     keypress = _Getch()
     try:
         while True:
             key = keypress()
-            if key == 'c' or key == 'C':
+            if key == 'c' or key == 'C' or key == 'q' or key == 'Q':
                 blue.stop()            # stop the white PWM output
                 green.stop()            # stop the white PWM output
                 red.stop()              # stop the red PWM output

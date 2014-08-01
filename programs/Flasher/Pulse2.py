@@ -11,8 +11,9 @@ import time, thread
 # ##global variables
 
 # here are the two LEDs and their GPIO pins the connect to.
-LED1 = 23
-LED2 = 18
+LED1 = 7
+LED2 = 8
+pauseTime = 0.02
 
 def setup():
     """setup all pins, etc"""
@@ -35,12 +36,21 @@ def flash(n, pin):
         GPIO.output(pin, GPIO.LOW)
         time.sleep(0.1)
 
+def alternate(n, pin1, pin2):
+    """alternate flashing pin n times """
+    for i in range(0, n):
+        GPIO.output(pin1, GPIO.HIGH)
+        GPIO.output(pin2, GPIO.LOW)
+        time.sleep(0.1)
+        GPIO.output(pin1, GPIO.LOW)
+        GPIO.output(pin2, GPIO.HIGH)
+        time.sleep(0.1)
+
 def main():
     global LOne,LTwo
     setup()
 	#flash each LED 8 times - for fun
-    flash(8, LED1)
-    flash(8, LED2)
+    alternate(8, LED1, LED2)
 
     LOne.start(0)
     LTwo.start(100)
