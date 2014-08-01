@@ -30,7 +30,7 @@ This is displaying the temperature from the local weather report.  Again, this i
 
 ![photo5](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/LCD/LCD_5.jpg)
 
-Here is the current time, updated every two seconds.
+Here is the current date and time, updated every two seconds.
 
 ![photo6](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/LCD/LCD_6.jpg)
 And this is the back of the LCD panel. On the YwRobot thing, the red LED shows that it has power. The blue square is a variable resistor which can be turned with a screwdriver to change the contrast. And finally, the two pins on the left normally have a jumper which enables the backlight. It was just too bright for my camera (see the first one for example). You can see the four pins on the right that connect to the breadboard. GND is ground, VCC is +5V, the other two SDA and SCL connect to the GPIO SDA and SCL pins.
