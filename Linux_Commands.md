@@ -27,6 +27,10 @@ Other useful options are `sudo apt-get autoremove` . "apt-get" is the command th
 * **ifconfig** : information about all network devices
 * **iwconfig** : information about all WiFi network devices
 
+* **ssh** : this is a command that lets you make a secure encrypted connection from one computer to another (on Linux or Mac). For Windows, you have to download a program "PuTTY" and use that. A variation of this is used to copy files from one computer to another.  e.g. in my music folder, I can open a terminal window and type `scp Beatles*mp3 pi@192.168.1.115:/home/pi/music`
+
+* **omxplayer** : this runs the default music player. If you're interested in music on your RPi, have a look at http://www.raspberrypi.org/tag/music/ and http://www.raspyfi.com/
+* NOTE: you need at least 64 MB of ram allocated for GPU in order to play mp3s. To change this type `sudo raspi-config` and choose "advanced options"
 
 ### Using Command line: 
 * use the up and down arrow keys to see previous commands
