@@ -5,6 +5,46 @@ I am using a 16x2 LCD panel. This is 16 characters in two rows, made up of dots 
 On the back of it is something that I believe is called a backpack. It says YwRobot Arduino LCM1 602 IIC VI.
 This is the part that I plug my four wires into to get it working. See the last photo on this page for more details.
 
+### 2. Configuring Linux
+Yes, this is **not** just plug and play. You have to do a bit of work, but not too much because I've written all the steps here for you (from http://skpang.co.uk/blog/archives/575).
+
+1. `sudo nano /etc/modprobe.d/raspi-blacklist.conf`
+then add a # to comment out i2c-bcm2708
+
+2. `sudo nano /etc/modules`
+add i2c-dev to a new line.
+
+3. then type these commands to install the software you need:
+```
+sudo apt-get update
+sudo apt-get install i2c-tools
+sudo apt-get install python-smbus
+```
+
+4. Finally ...  
+
+`sudo adduser pi i2c`
+`sudo shutdown -r now`
+
+plug in the i2c hardware
+
+`sudo i2cdetect -y 1`
+
+```
+You should see ____ which tells you the address of your i2c hardware.
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- 27 -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- UU -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --  
+```
+
+Here it tells me that my I2C address is **27**. If this doesn't work (you don't see anything), then reboot again AFTER you've plugged in the hardware.
+
 ### 2 Programs
 You need to copy the 3 programs all into the same folder on your Raspberry Pi: 
 * **LCDtext.py** This is the program that I wrote to do stuff
