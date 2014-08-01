@@ -5,7 +5,7 @@ All of my Raspberry Pi programs are here, each in their own folder, along with p
 
 Enjoy.
 
-=================================
+-----------
 
 ### ![logo1](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/Fritzing_icon.png) Fritzing 
 The schematics are very easy to draw using the free ![Fritzing](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/fritzing-logo.png)  software. You can download a bunch of extra Adafruit stuff from https://github.com/adafruit/Fritzing-Library/blob/master/AdaFruit.fzbz
@@ -14,7 +14,7 @@ However, the breakout connector (aka Adafruit Cobbler) is labelled incorrectly. 
 
 ![image](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/Pi_header_bb.png)
 
-============================
+----------------
 
 ### Android Apps
 
