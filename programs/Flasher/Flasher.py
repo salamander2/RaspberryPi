@@ -199,7 +199,6 @@ def modeSelect(channel):
     """
 
     global mode
-    print ("Mode=",  mode)
     if mode == 0:
         try:
             thread.start_new_thread(cyclePatterns,('MyStringHere',1))
