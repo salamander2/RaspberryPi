@@ -117,6 +117,11 @@ NOTE: you need at least 64 MB of ram allocated for GPU in order to play mp3s. To
 
 I have put all of my Raspberry Pi programs with photos, schematics, videos, explanations, and source code in separate folders under RaspberryPi/programs
 
+#### :large_blue_diamond: Running programs
+* To run a python program from the command line, type `python stuff.py`  where stuff.py is the name of your program (in the current directory).
+* If your Python program starts with the line `#!/usr/bin/env python` then Linux knows that it is a Python program and you can just type `./stuff.py` (oh, wait, you have to make it executable first by typing `chmod u+x stuff.py` )
+* Any program (in any language) that uses the GPIO pins has to be run using the "sudo" command. e.g. `sudo python stuff.py` . Note that this does not apply to the LCD program since it is using the GPIO pins in the I2C mode. But ... then I changed the program to use some other GPIO pins to detect a switch press.
+
 ------------
 
 ### :boom: Useful references for GPIO pins
