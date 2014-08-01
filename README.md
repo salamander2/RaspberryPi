@@ -84,6 +84,7 @@ iface wlan0 inet static
 
 ### :boom: Here are [Useful Linux Commands](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md) for GUI and command line (read these at some point).
 
+------
 
 ### :boom: Various Tools
 
