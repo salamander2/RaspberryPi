@@ -29,10 +29,13 @@ mode = 0
 def setup():
     """setup all pins, etc"""
     GPIO.setmode(GPIO.BCM)
-    #set all LED pins to be output and internal pul down resistor
+    #set all LED pins to be output and internal pull down resistor
     for pin in LEDS:
         GPIO.setup(pin, GPIO.OUT, pull_up_down=GPIO.PUD_DOWN)
-    #set up switch
+    #set up switch.
+    #NOTE: the switch must have a Pull UP resistor, because when it is pressed it connects the pin (#4) to the ground.
+    # If it is set up as Pull DOWN, then there is no difference between when the switch is pressed or not. 
+    # It is at 0 Volts in both cases.
     GPIO.setup(SW1, GPIO.IN, pull_up_down=GPIO.PUD_UP)
     GPIO.add_event_detect(SW1, GPIO.RISING, callback=modeSelect, bouncetime=300)
 
