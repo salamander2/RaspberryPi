@@ -87,14 +87,14 @@ iface wlan0 inet static
 
 ### :boom: Various Tools
 
-#### :black_circle: GitHub and Git
+#### :large_blue_diamond: GitHub and Git
 [How to use GitHub](https://github.com/salamander2/RaspberryPi/blob/master/Git_setup_notes.md)  This is my attempt to understand and explain it.  You only need to run one command to download my programs:
 `git clone https://github.com/salamander2/RaspberryPi`
 
-#### :black_circle: Connecting and File Transfer
+#### :large_blue_diamond: Connecting and File Transfer
 **ssh** is a command that lets you make a secure encrypted connection from one computer to another (on Linux or Mac). For Windows, you have to download a program "PuTTY" and use that. There are also handy versions for Android (e.g. JuiceSSH).
 
-:black_circle: **File Transfer**
+:large_blue_diamond: **File Transfer**
 
 A companion program to ssh, scp, is used to copy files from one computer to another.  e.g. in my music folder, I can open a terminal window and type `scp Beatles*mp3 pi@192.168.1.115:/home/pi/music` to copy all of my Beatles songs over. 
 Other ways of moving files: 
