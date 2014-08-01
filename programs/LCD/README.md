@@ -1,7 +1,7 @@
 LCD Display
 ===============================
 ### 1 Harware
-I am using a 16x2 LCD panel. This is 16 characters in two rows, made up of dots (5x8 per character) (not 7 segment LEDs).
+I am using a 16x2 LCD panel. This is 16 characters in two rows, made up of dots (5x8 per character,not 7 segment LEDs).
 On the back of it is something that I believe is called a backpack. It says YwRobot Arduino LCM1 602 IIC VI.
 This is the part that I plug my four wires into to get it working. See the last photo on this page for more details.
 
@@ -45,6 +45,8 @@ You need to copy the 3 programs all into the same folder on your Raspberry Pi:
 * **i2c_lib.py** This is an I2C library that does the interfacing with the LCD screen over the I2C pins.
 * The above two programs were from the repository https://github.com/paulbarber/raspi-gpio
 Note that this software does not require that Quick2Wire or any other extra stuff be installed.
+
+*There is extra stuff that you can do, like making your own characters, etc. But I don't know how to do it yet.  I can't even get the cursor to show up and flash.*
 
 ### 4 Photos
 ![photo1](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/LCD/LCD_1.jpg)
