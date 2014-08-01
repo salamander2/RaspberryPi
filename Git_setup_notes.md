@@ -136,4 +136,5 @@ This will automatically track files that have been deleted (locally) and delete 
 #### Recovering past versions
 When I accidentally delete something or need to go back to a previous version, I'll figure this part out.
 
+I think I do something like this (in the same folder as the messed up file, in this case Flasher.py) `git checkout -- Flasher.py`
 
