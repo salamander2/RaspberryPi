@@ -15,8 +15,9 @@ then add a # to comment out i2c-bcm2708
 add i2c-dev to a new line.
 
 3. then type these commands to install the software you need
+`sudo apt-get update` `sudo apt-get install i2c-tools` `sudo apt-get install python-smbus`
 
-4. Finally ...  `sudo adduser pi i2c`  and `sudo shutdown -r now`
+4. finally ...  `sudo adduser pi i2c`  and `sudo shutdown -r now`
 
 5. plug in the i2c hardware
 
