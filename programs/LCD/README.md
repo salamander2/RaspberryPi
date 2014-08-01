@@ -20,18 +20,12 @@ sudo apt-get update
 sudo apt-get install i2c-tools
 sudo apt-get install python-smbus
 ```
-
-4. Finally ...  
-
-`sudo adduser pi i2c`
-`sudo shutdown -r now`
-
-plug in the i2c hardware
-
-`sudo i2cdetect -y 1`
+4. Finally ...  `sudo adduser pi i2c`  and `sudo shutdown -r now`
+5. plug in the i2c hardware
+6. test it with the following command: `sudo i2cdetect -y 1` 
+You should see something like this which tells you the address of your i2c hardware.
 
 ```
-You should see ____ which tells you the address of your i2c hardware.
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
