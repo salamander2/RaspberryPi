@@ -19,6 +19,8 @@ This is a Raspberry Pi program to flash LEDs in different patterns and also shut
 ### 3. And here is the schematic:
 ![fritzing](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/Flasher/Flasher_bb.png)
 
+-------
+
 ## 4.  Pulse program
 
 * I've added a program called **"Pulse.py"** .  
