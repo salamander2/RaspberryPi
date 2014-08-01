@@ -59,7 +59,7 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-#run my Python flasher script on bootup
+#run my Python flasher script on bootup (make sure that the path is correct)
 sudo /home/pi/myPython/Flasher.py &
 
 exit 0
