@@ -1,7 +1,7 @@
 LCD Display
 ===============================
 ### 1 Harware
-I am using a 16x2 LCD panel. This is 16 characters in two rows, made up of dots (not 7 segment LEDs).
+I am using a 16x2 LCD panel. This is 16 characters in two rows, made up of dots (5x8 per character) (not 7 segment LEDs).
 On the back of it is something that I believe is called a backpack. It says YwRobot Arduino LCM1 602 IIC VI.
 This is the part that I plug my four wires into to get it working. See the last photo on this page for more details.
 
