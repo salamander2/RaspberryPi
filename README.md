@@ -1,7 +1,7 @@
 Raspberry Pi programs and setup
 ===============================
 
-### 1 How to set up your Raspberry Pi
+### How to set up your Raspberry Pi
 [(from James Doyle's Raspberry Pi course)](https://github.com/james2doyle/raspberry-pi-course)
 
 
@@ -80,24 +80,49 @@ iface wlan0 inet static
 * You must be connected to the internet for this to work
 * You should do this every month or so to apply the most recent patches to the operating system.
 
+-----------
+
 ###  [Useful Linux Commands](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md) for GUI and command line
 #### (Read these at some point)
 
 -----
 
-#### Installing the required tools
+#### Various Tools
 
-HOW TO USE GIT ...
+#### GitHub and Git
 [How to use GitHub](https://github.com/salamander2/RaspberryPi/blob/master/Git_setup_notes.md) 
 
 (This is my attempt to understand and explain it.)  You only need to run one command to download my programs:
 `git clone https://github.com/salamander2/RaspberryPi`
 
-## 2 Programs
+#### Connecting and File Transfer
+**ssh** is a command that lets you make a secure encrypted connection from one computer to another (on Linux or Mac). For Windows, you have to download a program "PuTTY" and use that. There are also handy versions for Android (e.g. JuiceSSH).
+
+**File Transfer**
+
+A companion program to ssh, scp, is used to copy files from one computer to another.  e.g. in my music folder, I can open a terminal window and type `scp Beatles*mp3 pi@192.168.1.115:/home/pi/music` to copy all of my Beatles songs over. 
+Other ways of moving files: 
+* set up a shared (SMB or Samba) folder
+* use Dropbox or the cloud
+* plug a USB drive into your Raspberry Pi
+* plug your Raspbian SD card into your computer. Unfortunately, Windows doesn't know how to read the Ext4 file system - so you need to install software (ext2read) that will let Windows do this.
+* rsync (a linux program that is similar to ssh/scp)
+
+**Music** 
+
+**omxplayer** : this runs the default music player. If you're interested in music on your RPi, have a look at http://www.raspberrypi.org/tag/music/ and http://www.raspyfi.com/
+
+NOTE: you need at least 64 MB of ram allocated for GPU in order to play mp3s. To change this type `sudo raspi-config` and choose "advanced options"
+
+--------
+
+## Programs
 
 I have put all of my Raspberry Pi programs with photos, schematics, videos, explanations, and source code in separate folders under RaspberryPi/programs
 
-## 3 Useful references for GPIO pins
+------------
+
+## Useful references for GPIO pins
  
  * GPIO P1 Header Pinouts: http://elinux.org/Rpi_Low-level_peripherals#P1_header
  
@@ -105,4 +130,3 @@ I have put all of my Raspberry Pi programs with photos, schematics, videos, expl
 
 ![GPIO pins](http://elinux.org/images/2/2a/GPIOs.png)
  
-
