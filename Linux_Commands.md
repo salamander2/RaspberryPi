@@ -27,7 +27,9 @@ Other useful options are `sudo apt-get autoremove` . "apt-get" is the command th
 * **ifconfig** : information about all network devices
 * **iwconfig** : information about all WiFi network devices
 
-* **ssh** : this is a command that lets you make a secure encrypted connection from one computer to another (on Linux or Mac). For Windows, you have to download a program "PuTTY" and use that. A variation of this, "scp" is used to copy files from one computer to another.  e.g. in my music folder, I can open a terminal window and type `scp Beatles*mp3 pi@192.168.1.115:/home/pi/music`
+* **ssh** : this is a command that lets you make a secure encrypted connection from one computer to another (on Linux or Mac). For Windows, you have to download a program "PuTTY" and use that. A variation of this, "scp" is used to copy files from one computer to another.  e.g. in my music folder, I can open a terminal window and type `scp Beatles*mp3 pi@192.168.1.115:/home/pi/music` to copy all of my Beatles songs over.  
+ 
+Other ways of moving files: set up a shared (SMB or Samba) folder, use Dropbox or the cloud, or plug a USB drive into your Raspberry Pi. You can't plug you RPi SD card into a Windows computer because windows doesn't know how to read the Ext4 file system - so you need to install software (ext2read) that will let Windows do this.
 
 * **omxplayer** : this runs the default music player. If you're interested in music on your RPi, have a look at http://www.raspberrypi.org/tag/music/ and http://www.raspyfi.com/
 * NOTE: you need at least 64 MB of ram allocated for GPU in order to play mp3s. To change this type `sudo raspi-config` and choose "advanced options"
