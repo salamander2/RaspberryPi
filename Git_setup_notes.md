@@ -92,7 +92,10 @@ git init
 git remote add origin ssh://git@github.com/salamander2/RaspberryPi
 git remote set-url origin git@github.com:salamander2/RaspberryPi
 
-git remote -v     #just testing
+git remote -v     #just testing. The following two lines are displayed
+    origin	git@github.com:salamander2/RaspberryPi (fetch)
+    origin	git@github.com:salamander2/RaspberryPi (push)
+
 ```
 
 #### *I'm not an expert on Git, so I basically just use the following commands in this order*
@@ -116,7 +119,7 @@ This command is used to check the status of the added files.
 
 
 #### Commit
-`git commit`  or `git commit -m 'updated comments'`
+`git commit -am 'updated comments'`
 
 This commits your changes (whatever that means!). You have to add a message to say what your changes are.
 
