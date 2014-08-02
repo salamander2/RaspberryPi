@@ -3,6 +3,8 @@ Three Colour LED program
 
 ### Program name: TriColour.py
 
+*You'll see below that the circuit is actually much simpler than it looks.*
+
 **Photos**
 ![Circuit](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/TriColour/TriColour_a.jpg)
 
@@ -24,7 +26,7 @@ The **TriColour.py** program is used to control the colour of the tri-colour LED
   * If you want a complete circuit diagram let me know.
   * I had some trouble getting Python to respond to a keypress. I found the code online -- it works nicely.
   * Pressing r, g, b makes the red, green and blue LEDs get brighter (up to 100%). Capital R, G, B make them dimmer down to 0%.  
-  * Press "c" to quit (cancel the program).
+  * Press "q" or "c" to quit (cancel the program).
   * For troubleshooting, I'm also printing out the rgb values. 
   * Note: for the keypresses to work, you'll have to connect via SSH (or HDMI and USB keyboard).
 
