@@ -19,9 +19,9 @@ def setup():
     """setup all pins, etc"""
     global LOne, LTwo
     GPIO.setmode(GPIO.BCM)
-    #set all LED pins to be output and internal pul down resistor
-    GPIO.setup(LED1, GPIO.OUT, pull_up_down=GPIO.PUD_DOWN)
-    GPIO.setup(LED2, GPIO.OUT, pull_up_down=GPIO.PUD_DOWN)
+    #set LED pins to be output 
+    GPIO.setup(LED1, GPIO.OUT)
+    GPIO.setup(LED2, GPIO.OUT)
 
     #set up PWM
     LOne = GPIO.PWM(LED1,100)
@@ -50,7 +50,7 @@ def main():
     global LOne,LTwo
     setup()
 	#flash each LED 8 times - for fun
-    alternate(8, LED1, LED2)
+    alternate(3, LED1, LED2)
 
     LOne.start(0)
     LTwo.start(100)

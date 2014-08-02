@@ -48,10 +48,10 @@ def setup():
     """setup all pins, etc"""
     global blue, green, red
     GPIO.setmode(GPIO.BCM)
-    #set all LED pins to be output and internal pul down resistor
-    GPIO.setup(B1, GPIO.OUT, pull_up_down=GPIO.PUD_DOWN)
-    GPIO.setup(G1, GPIO.OUT, pull_up_down=GPIO.PUD_DOWN)
-    GPIO.setup(R1, GPIO.OUT, pull_up_down=GPIO.PUD_DOWN)
+    #set all LED pins to be output
+    GPIO.setup(B1, GPIO.OUT)
+    GPIO.setup(G1, GPIO.OUT)
+    GPIO.setup(R1, GPIO.OUT)
 
     #set up PWM
     blue = GPIO.PWM(B1,100)
