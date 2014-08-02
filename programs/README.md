@@ -5,7 +5,7 @@ All of my Raspberry Pi programs are here, each in their own folder, along with p
 
 The Flasher program also has the separate Pulse program which uses PWM to make two LEDs pulse.
 
-At the bottom of the Flasher page is instructions on how to make a program run automatically when the Raspberry Pi is powered don.
+At the bottom of the Flasher page is instructions on how to make a program run automatically when the Raspberry Pi is powered on.
 
 Enjoy.
 
