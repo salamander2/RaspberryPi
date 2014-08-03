@@ -125,6 +125,8 @@ I have put all of my Raspberry Pi programs with photos, schematics, videos, expl
 ------------
 
 ### :boom: Useful references for GPIO pins
+
+:large_blue_diamond: Note that the GPIO pins have **internal pull-up and pull-down resistors.** These normally default to OFF. However, you can easily set them in Python (which I do in my programs) and then you don't have to use external pull-up or pull-down resistors when you connect a **switch.** See [this page](http://raspi.tv/2013/rpi-gpio-basics-6-using-inputs-and-outputs-together-with-rpi-gpio-pull-ups-and-pull-downs) with it's very handy diagrams to compare the two situations.
  
  * GPIO P1 Header Pinouts: http://elinux.org/Rpi_Low-level_peripherals#P1_header
  
