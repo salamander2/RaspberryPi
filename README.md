@@ -54,6 +54,23 @@ iface wlan0 inet dhcp
     wpa-psk "password"
 ```
 
+**NEW FIXED INSTRUCTIONS FOR UNLAB**
+
+```
+auto lo
+iface lo inet loopback
+
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+auto wlan0
+
+iface wlan0 inet dhcp
+wireless-essid UnLondon
+wireless-mode managed
+
+```
+
 * save the file with `ctrl+o`, press <Enter> to confirm the filename, and press `ctrl+x` to close nano.
 * restart the RPi with `sudo shutdown -r now` or <CTRL><ALT><DEL>
 
