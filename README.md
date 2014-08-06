@@ -40,19 +40,6 @@ If you press the `~` key and see that it is not `~` that means your keyboard is 
 * Ignore the stuff about the `eth0` device. It is used to configure the ethernet (cable) adapter.
 * Change the stuff about `wlan0` to the following, delete things if necessary. (wlan0 is the WiFi adapter)
 
-```
-auto lo
-
-iface lo inet loopback
-iface eth0 inet dhcp
-
-allow-hotplug wlan0
-auto wlan0
-
-iface wlan0 inet dhcp
-    wpa-ssid "networkname"
-    wpa-psk "password"
-```
 
 **NEW FIXED INSTRUCTIONS FOR UNLAB** (below)
 
