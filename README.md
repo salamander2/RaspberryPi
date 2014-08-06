@@ -54,7 +54,7 @@ iface wlan0 inet dhcp
     wpa-psk "password"
 ```
 
-**NEW FIXED INSTRUCTIONS FOR UNLAB**
+**NEW FIXED INSTRUCTIONS FOR UNLAB** (below)
 
 ```
 auto lo
