@@ -20,7 +20,7 @@ There are a few useful Android apps that work well with Raspberry Pi.
 
 ![network](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/network_scan.png) **Network Scan** This general purpose program will scan your local network and find all of the devices on it. It's good for finding your RPi's IP address if you don't know it.
 
-![GPIO](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/GPIO_tool_RaspberryPi.png) **GPIO Tool Raspberry Pi** This is a very handy program for turning LEDs on and off. You can do a lot with the GPIO pins. Unfortunately, it does not have an option to shutdown or reboot the Raspberry Pi. Sometimes it gets stuck - you may need to clear all of it's data (clear app data).
+![GPIO](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/GPIO_tool_RaspberryPi.png) **GPIO Tool Raspberry Pi** This is a very handy program for turning LEDs on and off. You can do a lot with the GPIO pins. Unfortunately, it does not have an option to shutdown or reboot the Raspberry Pi. Sometimes it gets stuck - you may need to clear all of its data (clear app data).
 
 ![reference](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/RPI_hardware_guide.png) **RPi Hardware Guide** This has a lot of information about the RPi. I don't know if you'll need it or not. 
 
