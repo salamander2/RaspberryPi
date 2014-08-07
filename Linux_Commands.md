@@ -25,7 +25,7 @@ Other useful options are `sudo apt-get autoremove` . "apt-get" is the command th
 * **df** : how much disk free space you have. `df -h` is better
 * **passwd** : this is the command to change your password
 * **ifconfig** : information about all network devices
-* **iwconfig** : information about all WiFi network devices
+* **iwconfig** : information about all WiFi network devices (different info from ifconfig)
 * **shutdown** : this is how you shutdown and restart/power off the RPi. Read the man pages for options (normally just `sudo shutdown -r now`). Must be run using sudo.
 * **exit** : This is how you log off of any linux command line session. It will log you out of an SSH connection too.
 
