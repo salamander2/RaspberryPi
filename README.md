@@ -53,7 +53,7 @@ network={
 * To find your IP address, type `ifconfig` .
 
 * In the past, the wifi was setup by changing /etc/network/interfaces. 
-* If you type `cat /etc/networking/interfaces` you should see this: 
+ * If you type `cat /etc/network/interfaces` you should see this: 
 
 ```
 auto lo
@@ -76,7 +76,7 @@ wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 
 * `eth0` is the ethernet (cable) adapter.  `wlan0` is the WiFi adapter.
 * If you want a static IP address (for your home network), change the wlan0 settings to something like the following. You'll have to make changes appropriate for your home network. 
-* NOTE: these instructions may also need to be updated to use the wpa_supplicant.conf file (the file below is the /etc/network/interfaces file)
+ * NOTE: these instructions may also need to be updated to use the wpa_supplicant.conf file (the file below is the /etc/network/interfaces file)
 ```
 iface wlan0 inet static
     address 192.168.1.33
