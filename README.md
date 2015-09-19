@@ -50,10 +50,11 @@ network={
 * restart the RPi with `sudo shutdown -r now` or &lt;CTRL&gt;&lt;ALT&gt;&lt;DEL&gt;. 
 * Instead of restarting, the following often work: `sudo ifdown wlan0` then `sudo ifup wlan0`
 * To confirm that you're connected to the internet, type `date`. Raspberry Pi will automatically set the date and time to the correct value from the internet.  Or you can ping Google: `ping 8.8.8.8`
-* To find your IP address, type `ifconfig`
+* To find your IP address, type `ifconfig` .
 
-* In the past, the wifi was setup by changing /etc/network/interfaces.
+* In the past, the wifi was setup by changing /etc/network/interfaces. 
 * If you type `cat /etc/networking/interfaces` you should see this: 
+
 ```
 auto lo
 iface lo inet loopback
