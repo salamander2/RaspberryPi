@@ -46,6 +46,7 @@ Other useful options are `sudo apt-get autoremove` . "apt-get" is the command th
 
 ## How to copy/backup Raspberry Pi SD card.
 This assumes that you are using a Linux computer _(so it's mostly a handy reference for me!)_
+:x: This must be to the same size SD card, and probably the same manufacturer too. :bangbang:
 
 1. Find where the SD card is located. Normally it is at **/dev/sdb** , so this is what I'm using in this example. Make sure that it is not mounted `df -h`
 2. Change to the directory where you want to store the backups (e.g. on a USB drive or /home/yourname/RPI_backup )
