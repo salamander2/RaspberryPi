@@ -34,6 +34,7 @@ Other useful options are `sudo apt-get autoremove` . "apt-get" is the command th
    * **cat /etc/issue**
    * **cat /etc/os-release** 
 * **cat /proc/cpuinfo** will tell you what CPU your computer has.
+* **touch /forcefsck** : force a drive check on next reboot 
 
 ### Using Command line: 
 * use the up and down arrow keys to see previous commands
