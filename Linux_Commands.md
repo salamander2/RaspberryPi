@@ -49,12 +49,12 @@ This assumes that you are using a Linux computer _(so it's mostly a handy refere
 
 1. Find where the SD card is located. Normally it is at **/dev/sdb** , so this is what I'm using in this example. Make sure that it is not mounted `df -h`
 2. Change to the directory where you want to store the backups (e.g. on a USB drive or /home/yourname/RPI_backup )
-3. backup MBR: `dd if=/dev/sdb of=backup-sdb.mbr count=1 bs=512`
-4. backup extended partitions: `sfdisk -d /dev/sdb > backup-sdb.ext`
-5. copy all data: `dd if=/dev/sdb of=backup-sdb.dd bs=1M`  **make sure that there is enough space on the USB drive first!**
+3. backup MBR: `sudo dd if=/dev/sdb of=backup-sdb.mbr count=1 bs=512`
+4. backup extended partitions: `sudo sfdisk -d /dev/sdb > backup-sdb.ext`
+5. copy all data: `sudo dd if=/dev/sdb of=backup-sdb.dd bs=1M`  **make sure that there is enough space on the USB drive first!**
 
 ### How to restore the data to another SD card:
 0. Change to the directory where the backups are stored.
-1. Restore MBR: `dd if=backup-sdb.mbr of=/dev/sdb`
-2. restore extended partitions: `sfdisk /dev/sdb < backup-sdb.ext`
-3. restore all data: `dd if=backup-sdb.dd of=/dev/sdb bs=1M`
+1. Restore MBR: `sudo dd if=backup-sdb.mbr of=/dev/sdb`
+2. restore extended partitions: `sudo sfdisk /dev/sdb < backup-sdb.ext`
+3. restore all data: `sudo dd if=backup-sdb.dd of=/dev/sdb bs=1M`
