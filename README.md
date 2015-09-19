@@ -47,7 +47,7 @@ network={
 ````
 
 * save the file with `ctrl+o`, press <Enter> to confirm the filename, and press `ctrl+x` to close nano.
-* restart the RPi with `sudo shutdown -r now` or <CTRL><ALT><DEL>. 
+* restart the RPi with `sudo shutdown -r now` or &lt;CTRL&gt;&lt;ALT&gt;&lt;DEL&gt;. 
 * Instead of restarting, the following often work: `sudo ifdown wlan0` then `sudo ifup wlan0`
 * To confirm that you're connected to the internet, type `date`. Raspberry Pi will automatically set the date and time to the correct value from the internet.  Or you can ping Google: `ping 8.8.8.8`
 * To find your IP address, type `ifconfig`
@@ -74,7 +74,8 @@ wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
 * `eth0` is the ethernet (cable) adapter.  `wlan0` is the WiFi adapter.
-* If you want a static IP address (for your home network), change the wlan0 settings to something like the following. You'll have to make changes appropriate for your home network. NOTE: these instructions may also need to be updated to use the wpa_supplicant.conf file.
+* If you want a static IP address (for your home network), change the wlan0 settings to something like the following. You'll have to make changes appropriate for your home network. 
+* NOTE: these instructions may also need to be updated to use the wpa_supplicant.conf file (the file below is the /etc/network/interfaces file)
 ```
 iface wlan0 inet static
     address 192.168.1.33
