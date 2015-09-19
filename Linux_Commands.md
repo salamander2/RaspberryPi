@@ -28,7 +28,8 @@ Other useful options are `sudo apt-get autoremove` . "apt-get" is the command th
 * **iwconfig** : information about all WiFi network devices (different info from ifconfig)
 * **shutdown** : this is how you shutdown and restart/power off the RPi. Read the man pages for options (normally just `sudo shutdown -r now`). Must be run using sudo.
 * **exit** : This is how you log off of any linux command line session. It will log you out of an SSH connection too.
-* How to tell what version of Linux you are running: **uname -a**  or **lsb_release -a** or **cat /etc/issue** or **cat /etc/os-release** . All of these give slightly different information.
+* How to tell what version of Linux you are running: 
+   * **uname -a**  or **lsb_release -a** or **cat /etc/issue** or **cat /etc/os-release** . All of these give slightly different information.
 * **cat /proc/cpuinfo** will tell you what CPU your computer has.
 
 ### Using Command line: 
