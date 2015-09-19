@@ -18,7 +18,7 @@ There are a few useful Android apps that work well with Raspberry Pi.
 
 ![JuiceSSH](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/juiceSSH.png) **JuiceSSH** This is a good SSH program. You can connect to your RPi just as if you were using a computer.
 
-![network](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/network_scan.png) **Network Scan** This general purpose program will scan your local network and find all of the devices on it. It's good for finding your RPi's IP address if you don't know it.
+![network](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/fing.png) **Fing Network Scan** This general purpose program will scan your local network and find all of the devices on it. It's good for finding your RPi's IP address if you don't know it.
 
 ![GPIO](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/GPIO_tool_RaspberryPi.png) **GPIO Tool Raspberry Pi** This is a very handy program for turning LEDs on and off. You can do a lot with the GPIO pins. Unfortunately, it does not have an option to shutdown or reboot the Raspberry Pi. Sometimes it gets stuck - you may need to clear all of its data (clear app data).
 
