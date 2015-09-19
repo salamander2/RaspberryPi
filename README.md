@@ -2,8 +2,6 @@ Raspberry Pi programs and setup
 ===============================
 
 ### :boom: How to set up your Raspberry Pi
-(much of this information was initially from [James Doyle's Raspberry Pi course](https://github.com/james2doyle/raspberry-pi-course))
-
 
 #### Install Rasbian
 
@@ -14,7 +12,7 @@ Raspberry Pi programs and setup
 * the default username and password is  "pi" and "raspberry", respectively
 * once installed the system will reboot
 * login with the default credentials
-* you are now logged into the shell. Use `startx` to launch the desktop
+* you are now logged into the shell. Use `startx` to launch the desktop if you want to.
 
 
 #### Keyboard Problems
@@ -36,45 +34,49 @@ If you press the `~` key and see that it is not `~` that means your keyboard is 
 
 #### Setup WiFi
 
-* Run `sudo nano /etc/network/interfaces` to open the network config. (nano is an editor)
-* Ignore the stuff about the `eth0` device. It is used to configure the ethernet (cable) adapter.
-* Change the stuff about `wlan0` to the following, delete things if necessary. (wlan0 is the WiFi adapter)
+* In the past, the wifi was setup by changing /etc/network/interfaces.
+* The new method of setting up wifi involves the following:
+* Open the wpa-supplicant configuration file in nano: `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
+* Go to the bottom of the file and add the following:
 
-```
-auto lo
-
-iface lo inet loopback
-iface eth0 inet dhcp
-
-allow-hotplug wlan0
-auto wlan0
-
-iface wlan0 inet dhcp
-    wpa-ssid "networkname"
-    wpa-psk "password"
-```
-
-**NEW FIXED INSTRUCTIONS FOR UNLAB** (below)
-
-```
-auto lo
-iface lo inet loopback
-
-iface eth0 inet dhcp
-
-allow-hotplug wlan0
-auto wlan0
-
-iface wlan0 inet dhcp
-wireless-essid UnLondon
-wireless-mode managed
-
-```
+````
+network={
+    ssid="your_network_SSID"
+    psk="Your_wifi_password"
+}
+````
 
 * save the file with `ctrl+o`, press <Enter> to confirm the filename, and press `ctrl+x` to close nano.
-* restart the RPi with `sudo shutdown -r now` or <CTRL><ALT><DEL>
+* restart the RPi with `sudo shutdown -r now` or &lt;CTRL&gt;&lt;ALT&gt;&lt;DEL&gt;. 
+* Instead of restarting, the following often work: `sudo ifdown wlan0` then `sudo ifup wlan0`
+* To confirm that you're connected to the internet, type `date`. Raspberry Pi will automatically set the date and time to the correct value from the internet.  Or you can ping Google: `ping 8.8.8.8`
+* To find your IP address, type `ifconfig` .
 
-* If you want a static IP address (for your home network), change the wlan0 settings to something like the following. You'll have to make changes appropriate for your home network.
+* In the past, the wifi was setup by changing /etc/network/interfaces. 
+ * If you type `cat /etc/network/interfaces` you should see this: 
+
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+allow-hotplug eth0
+iface eth0 inet manual
+
+auto wlan0
+allow-hotplug wlan0
+iface wlan0 inet manual
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+# auto wlan1
+# allow-hotplug wlan1
+# iface wlan1 inet manual
+# wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+* `eth0` is the ethernet (cable) adapter.  `wlan0` is the WiFi adapter.
+* If you want a static IP address (for your home network), change the wlan0 settings to something like the following. You'll have to make changes appropriate for your home network. 
+ * NOTE: these instructions may also need to be updated to use the wpa_supplicant.conf file (the file below is the /etc/network/interfaces file)
 ```
 iface wlan0 inet static
     address 192.168.1.33
@@ -85,9 +87,7 @@ iface wlan0 inet static
     dns-nameservers 8.8.8.8  #Google DNS
 ```
 
-* Be careful not to make typos or you won't be able to connect to the internet. Type `cat /etc/network/interfaces` to display the file.
-* To confirm that you're connected to the internet, type `date`. Raspberry Pi will automatically set the date and time to the correct value from the internet. 
-* To find your IP address, type `ifconfig`
+* Be careful not to make typos or you won't be able to connect to the internet.
 
 #### Update Linux
 
@@ -96,10 +96,11 @@ iface wlan0 inet static
 * You can combine this into one command: `sudo apt-get update && sudo apt-get upgrade`
 * You must be connected to the internet for this to work
 * You should do this every month or so to apply the most recent patches to the operating system.
+* Extra programs that I tend to install on Linux: `sudo apt-get vim vim-doc byobu htop mc bmon`
 
 -----------
 
-### :boom: Here are [Useful Linux Commands](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md) for GUI and command line (read these at some point).
+### :boom: [Here are Useful Linux Commands](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md) for GUI and command line (read these at some point).
 
 ------
 
@@ -151,6 +152,6 @@ I have put all of my Raspberry Pi programs with photos, schematics, videos, expl
  
  * More details for pinouts: http://elinux.org/RPi_BCM2835_GPIOs
 
-![GPIO pins](http://elinux.org/images/2/2a/GPIOs.png)
+![GPIO pins](http://pi4j.com/images/j8header-2b.png)
  
  
