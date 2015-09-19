@@ -35,24 +35,6 @@ If you press the `~` key and see that it is not `~` that means your keyboard is 
 #### Setup WiFi
 
 * In the past, the wifi was setup by changing /etc/network/interfaces.
-* If you type `cat /etc/networking/interfaces` you should see this: 
-
-```
-auto lo
-
-iface lo inet loopback
-iface eth0 inet dhcp
-
-allow-hotplug wlan0
-auto wlan0
-
-iface wlan0 inet dhcp
-    wpa-ssid "networkname"
-    wpa-psk "password"
-```
-
-* `eth0` is the ethernet (cable) adapter.  `wlan0` is the WiFi adapter.
-
 * The new method of setting up wifi involves the following:
 * Open the wpa-supplicant configuration file in nano: `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
 * Go to the bottom of the file and add the following:
@@ -67,8 +49,32 @@ network={
 * save the file with `ctrl+o`, press <Enter> to confirm the filename, and press `ctrl+x` to close nano.
 * restart the RPi with `sudo shutdown -r now` or <CTRL><ALT><DEL>. 
 * Instead of restarting, the following often work: `sudo ifdown wlan0` then `sudo ifup wlan0`
+* To confirm that you're connected to the internet, type `date`. Raspberry Pi will automatically set the date and time to the correct value from the internet.  Or you can ping Google: `ping 8.8.8.8`
+* To find your IP address, type `ifconfig`
 
-* If you want a static IP address (for your home network), change the wlan0 settings to something like the following. You'll have to make changes appropriate for your home network.
+* In the past, the wifi was setup by changing /etc/network/interfaces.
+* If you type `cat /etc/networking/interfaces` you should see this: 
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+allow-hotplug eth0
+iface eth0 inet manual
+
+auto wlan0
+allow-hotplug wlan0
+iface wlan0 inet manual
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+# auto wlan1
+# allow-hotplug wlan1
+# iface wlan1 inet manual
+# wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+* `eth0` is the ethernet (cable) adapter.  `wlan0` is the WiFi adapter.
+* If you want a static IP address (for your home network), change the wlan0 settings to something like the following. You'll have to make changes appropriate for your home network. NOTE: these instructions may also need to be updated to use the wpa_supplicant.conf file.
 ```
 iface wlan0 inet static
     address 192.168.1.33
@@ -81,9 +87,6 @@ iface wlan0 inet static
 
 * Be careful not to make typos or you won't be able to connect to the internet.
 
-* To confirm that you're connected to the internet, type `date`. Raspberry Pi will automatically set the date and time to the correct value from the internet.  Or you can ping Google: `ping 8.8.8.8`
-* To find your IP address, type `ifconfig`
-
 #### Update Linux
 
 * Update the list of packages (repositories) with `sudo apt-get update`
@@ -91,6 +94,7 @@ iface wlan0 inet static
 * You can combine this into one command: `sudo apt-get update && sudo apt-get upgrade`
 * You must be connected to the internet for this to work
 * You should do this every month or so to apply the most recent patches to the operating system.
+* Extra programs that I tend to install on Linux: `sudo apt-get vim vim-doc byobu htop mc bmon`
 
 -----------
 
@@ -146,6 +150,6 @@ I have put all of my Raspberry Pi programs with photos, schematics, videos, expl
  
  * More details for pinouts: http://elinux.org/RPi_BCM2835_GPIOs
 
-![GPIO pins](http://elinux.org/images/2/2a/GPIOs.png)
+![GPIO pins](http://pi4j.com/images/j8header-2b.png)
  
  
