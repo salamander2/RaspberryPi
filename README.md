@@ -152,6 +152,6 @@ I have put all of my Raspberry Pi programs with photos, schematics, videos, expl
  
  * More details for pinouts: http://elinux.org/RPi_BCM2835_GPIOs
 
-![GPIO pins](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/Raspberry-Pi-GPIO-Layout-Model-B-Plus-2700x900.png)
+![GPIO pins](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/Raspberry-PI-GPIO-S.png)
  
  
