@@ -8,21 +8,24 @@ This is the part that I plug my four wires into to get it working. See the last 
 ### 2. Configuring Linux
 Yes, this is **not** just plug and play. You have to do a bit of work, but not too much because I've written all the steps here for you (from http://skpang.co.uk/blog/archives/575).
 
-1. `sudo nano /etc/modprobe.d/raspi-blacklist.conf`
+1. Type `sudo raspi-config` to make sure that the I2C kernel module is loaded.  Click on "Advanced options" then choose "I2C" as in the diagram below.
+![one](http://domoticx.com/wp-content/uploads/raspi-config-advanced-options.png)
+
+2. `sudo nano /etc/modprobe.d/raspi-blacklist.conf`
 then add a # to comment out i2c-bcm2708     
 **NOTE** The newer version of Raspbian doesn't seem to have this file. So don't do anything here.
 
-2. `sudo nano /etc/modules`
+3. `sudo nano /etc/modules`
 add i2c-dev to a new line.
 
-3. then type these commands to install the software you need
+4. then type these commands to install the software you need
 `sudo apt-get update` , `sudo apt-get install i2c-tools` , `sudo apt-get install python-smbus`
 
-4. finally ...  `sudo adduser pi i2c`  and `sudo shutdown -r now`
+5. finally ...  `sudo adduser pi i2c`  and then **you must reboot:** `sudo shutdown -r now`
 
-5. plug in the i2c hardware
+6. plug in the i2c hardware
 
-6. test it with the following command: `sudo i2cdetect -y 1` 
+7. test it with the following command: `sudo i2cdetect -y 1` 
 You should see something like this which tells you the address of your i2c hardware.
 
 ```
@@ -54,6 +57,8 @@ wget https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/L
 wget https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/LCD/lcd_display.py
 wget https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/LCD/i2c_lib.py
 ```
+
+Type the following to run the program: `sudo python LCDtext.py`
 
 *There is extra stuff that you can do, like making your own characters, etc. But I don't know how to do it yet.  I can't even get the cursor to show up and flash.*
 
