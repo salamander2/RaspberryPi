@@ -47,6 +47,14 @@ You need to copy the 3 programs all into the same folder on your Raspberry Pi:
 * The above two programs were from the repository https://github.com/paulbarber/raspi-gpio
 Note that this software does not require that Quick2Wire or any other extra stuff be installed.
 
+Commands to download the programs:
+
+```
+wget https://github.com/salamander2/RaspberryPi/blob/master/programs/LCD/LCDtext.py
+wget https://github.com/salamander2/RaspberryPi/blob/master/programs/LCD/lcd_display.py
+wget https://github.com/salamander2/RaspberryPi/blob/master/programs/LCD/i2c_lib.py
+```
+
 *There is extra stuff that you can do, like making your own characters, etc. But I don't know how to do it yet.  I can't even get the cursor to show up and flash.*
 
 ### 4 Photos
