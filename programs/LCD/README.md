@@ -9,7 +9,8 @@ This is the part that I plug my four wires into to get it working. See the last 
 Yes, this is **not** just plug and play. You have to do a bit of work, but not too much because I've written all the steps here for you (from http://skpang.co.uk/blog/archives/575).
 
 1. `sudo nano /etc/modprobe.d/raspi-blacklist.conf`
-then add a # to comment out i2c-bcm2708
+then add a # to comment out i2c-bcm2708     
+**NOTE** The newer version of Raspbian doesn't seem to have this file. So don't do anything here.
 
 2. `sudo nano /etc/modules`
 add i2c-dev to a new line.
