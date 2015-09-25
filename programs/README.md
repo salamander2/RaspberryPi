@@ -24,7 +24,7 @@ There are a few useful Android apps that work well with Raspberry Pi.
 
 ![reference](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/RPI_hardware_guide.png) **RPi Hardware Guide** This has a lot of information about the RPi. I don't know if you'll need it or not. 
 
-**RaspController Pro** -- I just installed this and it's awesome. I'll add more info soon.
+:boom: **RaspController Pro** -- I just installed this and it's awesome. I'll add more info soon.
 
 ### ![logo1](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/Fritzing_icon.png) Fritzing 
 The schematics are very easy to draw using the free ![Fritzing](https://raw.githubusercontent.com/salamander2/RaspberryPi/master/programs/fritzing-logo.png)  software. You can download a bunch of extra Adafruit stuff from https://github.com/adafruit/Fritzing-Library/blob/master/AdaFruit.fzbz
