@@ -127,7 +127,11 @@ Other ways of moving files:
 
 **omxplayer** : this runs the default music player. If you're interested in music on your RPi, have a look at http://www.raspberrypi.org/tag/music/ and http://www.raspyfi.com/
 
-NOTE: you need at least 64 MB of ram allocated for GPU in order to play mp3s. To change this type `sudo raspi-config` and choose "advanced options"
+NOTE: you need at least 64 MB of ram allocated for GPU in order to play mp3s. To change this type `sudo raspi-config` and choose "advanced options" [This may be old information]
+
+`omxplayer -o local Beatles.mp3`  This will play the mp3 over the Audio output. To make sound go over the HDMI output, put hdmi (or HDMI?)
+
+[other sound related commmands: `alsamixer` `sudo aplay /usr/share/sounds/alsa/Front_Center.wav`  `amixer cset numid=3 0`]
 
 --------
 
