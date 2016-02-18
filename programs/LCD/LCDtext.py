@@ -27,7 +27,7 @@ def run_cmd(cmd):
 IPCMD = "ip addr show wlan0 | grep 'inet ' | awk '{print $2}' | cut -d/ -f1"
 ipaddr = run_cmd(IPCMD).rstrip('\n')
 
-WEATHCMD="wget -qO- http://wxdata.weather.com/wxdata/weather/local/CAXX0255?cc=*\&unit=m | grep tmp | sed 's/[^0-9]*//g'"
+WEATHCMD="wget -qO- http://wxdata.weather.com/wxdata/weather/local/CAXX0255?cc=*\&unit=m | grep tmp | sed 's/[^-0-9]*//g'"
 temper = run_cmd(WEATHCMD).rstrip('\n')
 
 def changeMode(junk1):
