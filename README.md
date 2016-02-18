@@ -46,12 +46,14 @@ network={
 }
 ````
 
+* if you don't want your passphrase visible, you can encrypt it: `wp_passphrase mySSID`  Copy and paste the output from this into the wpa_supplicant.conf file
 * save the file with `ctrl+o`, press <Enter> to confirm the filename, and press `ctrl+x` to close nano.
 * restart the RPi with `sudo shutdown -r now` or &lt;CTRL&gt;&lt;ALT&gt;&lt;DEL&gt;. 
 * Instead of restarting, the following often work: `sudo ifdown wlan0` then `sudo ifup wlan0`
 * To confirm that you're connected to the internet, type `date`. Raspberry Pi will automatically set the date and time to the correct value from the internet.  Or you can ping Google: `ping 8.8.8.8`
 * To find your IP address, type `ifconfig` .
 
+## OMIT from here >>>>>>
 * In the past, the wifi was setup by changing /etc/network/interfaces. 
  * If you type `cat /etc/network/interfaces` you should see this: 
 
@@ -86,7 +88,7 @@ iface wlan0 inet static
     gateway 192.168.1.1
     dns-nameservers 8.8.8.8  #Google DNS
 ```
-
+## END OMIT <<<<<<
 * Be careful not to make typos or you won't be able to connect to the internet.
 
 #### Update Linux
