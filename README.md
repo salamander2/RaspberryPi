@@ -34,7 +34,7 @@ If you press the `~` key and see that it is not `~` that means your keyboard is 
 
 #### Setup WiFi
 
-* In the past, the wifi was setup by changing /etc/network/interfaces.
+* _In the past, the wifi was setup by changing /etc/network/interfaces. If you need the old commands, look at the other branch of this repository._
 * The new method of setting up wifi involves the following:
 * Open the wpa-supplicant configuration file in nano: `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
 * Go to the bottom of the file and add the following:
@@ -46,14 +46,12 @@ network={
 }
 ````
 
-* if you don't want your passphrase visible, you can encrypt it: `wp_passphrase mySSID`  Copy and paste the output from this into the wpa_supplicant.conf file
+* **if you don't want your passphrase visible, you can encrypt it: `wp_passphrase mySSID`**  Copy and paste the output from this into the wpa_supplicant.conf file
 * save the file with `ctrl+o`, press <Enter> to confirm the filename, and press `ctrl+x` to close nano.
 * restart the RPi with `sudo shutdown -r now` or &lt;CTRL&gt;&lt;ALT&gt;&lt;DEL&gt;. 
 * Instead of restarting, the following often work: `sudo ifdown wlan0` then `sudo ifup wlan0`
 * To confirm that you're connected to the internet, type `date`. Raspberry Pi will automatically set the date and time to the correct value from the internet.  Or you can ping Google: `ping 8.8.8.8`
 * To find your IP address, type `ifconfig` .
-
-* _In the past, the wifi was setup by changing /etc/network/interfaces. If you need the old commands, look at the other branch of this repository._
 
 * Be careful not to make typos or you won't be able to connect to the internet.
 
@@ -69,6 +67,9 @@ network={
 -----------
 
 ### :boom: [Here are Useful Linux Commands](https://github.com/salamander2/RaspberryPi/blob/master/Linux_Commands.md) for GUI and command line (read these at some point).
+
+#### :large_blue_diamond: raspi-config
+`sudo raspi-config` will let you change many many of the settings of your raspberry pi.
 
 ------
 
