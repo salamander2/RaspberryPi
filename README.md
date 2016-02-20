@@ -53,42 +53,8 @@ network={
 * To confirm that you're connected to the internet, type `date`. Raspberry Pi will automatically set the date and time to the correct value from the internet.  Or you can ping Google: `ping 8.8.8.8`
 * To find your IP address, type `ifconfig` .
 
-## OMIT from here >>>>>>
-* In the past, the wifi was setup by changing /etc/network/interfaces. 
- * If you type `cat /etc/network/interfaces` you should see this: 
+* _In the past, the wifi was setup by changing /etc/network/interfaces. If you need the old commands, look at the other branch of this repository._
 
-```
-auto lo
-iface lo inet loopback
-
-auto eth0
-allow-hotplug eth0
-iface eth0 inet manual
-
-auto wlan0
-allow-hotplug wlan0
-iface wlan0 inet manual
-wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-
-# auto wlan1
-# allow-hotplug wlan1
-# iface wlan1 inet manual
-# wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-```
-
-* `eth0` is the ethernet (cable) adapter.  `wlan0` is the WiFi adapter.
-* If you want a static IP address (for your home network), change the wlan0 settings to something like the following. You'll have to make changes appropriate for your home network. 
- * NOTE: these instructions may also need to be updated to use the wpa_supplicant.conf file (the file below is the /etc/network/interfaces file)
-```
-iface wlan0 inet static
-    address 192.168.1.33
-    netmask 255.255.255.0
-    network 192.168.1.0
-    broadcast 192.168.1.255
-    gateway 192.168.1.1
-    dns-nameservers 8.8.8.8  #Google DNS
-```
-## END OMIT <<<<<<
 * Be careful not to make typos or you won't be able to connect to the internet.
 
 #### Update Linux
