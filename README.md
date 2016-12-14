@@ -55,6 +55,14 @@ network={
 
 * Be careful not to make typos or you won't be able to connect to the internet.
 
+#### Fix screen resolution
+Sometimes, unpredictably, the Raspberry Pi starts with a really huge screen resolution. The way to fix it is to do the following:  `sudo nano /boot/config.txt` and then uncomment/add in the following two lines:
+
+````
+hdmi_group=1
+hdmi_mode=16
+````
+
 #### Update Linux
 
 * Update the list of packages (repositories) with `sudo apt-get update`
