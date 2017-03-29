@@ -19,6 +19,9 @@ Most of these commands have options and/or take parameters. e.g. `ls -la *py`
     * You can also always get to the home directory by typing `cd`
     * `cd -` will take you to the previous directory you were in
     * You can get to a complicated location (eg. ./quick2wire_some_stuff) by typing just the first few letters and then pressing tab. `cd qui<TAB>`
+* **mkdir** : make a sub directory
+* **rm** ... : delete (remove) files or directories.
+   * If it's an empty directory, use **rmdir**
 * **man** : look un the manual (man page) for something. e.g. `man python`
 * **apt-get** : this is the main (best??) way to install new software. e.g. `sudo apt-get install git`   
 Other useful options are `sudo apt-get autoremove` . "apt-get" is the command that also updates your software and patches it.
