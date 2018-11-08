@@ -63,6 +63,13 @@ hdmi_group=1
 hdmi_mode=16
 ````
 
+:bomb: Hmm... this seems to have stopped working. Try the following or look at https://elinux.org/RPiconfig#Video_mode_options
+
+````
+hdmi_group=2
+hdmi_mode=8
+````
+
 #### Update Linux
 
 * Update the list of packages (repositories) with `sudo apt-get update`
