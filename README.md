@@ -1,6 +1,11 @@
 Raspberry Pi programs and setup
 ===============================
 
+
+|Some of these instructions are obsolete|
+|--|
+|They were written for Rasbian Wheezy, and I'm now using Jessie on the Pi v2|
+
 ### :boom: How to set up your Raspberry Pi
 
 #### Install Rasbian
